@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: #fff;
     font-family: 'Slabo 27px', serif;
 }
 
@@ -62,6 +61,7 @@ h2 {
     padding: 1em .3em;
     border-radius: 4px;
     transition: .3s;
+    color: #fff;
 }
 
 .apresentacao h1 {
@@ -123,6 +123,7 @@ h2 {
     display: none;
     padding: .1em;
     border-radius: 4px;
+    color: #fff;
 }
 
 #mostrar-sidebar:hover {
@@ -132,6 +133,7 @@ h2 {
 footer {
     background: #153243;
     padding: 1em;
+    color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -150,7 +152,7 @@ footer {
     }
 }
 
-/* .sidebar {
+.sidebar {
     position: absolute;
     z-index: 5;
     background-color: #000000b2;
@@ -158,6 +160,8 @@ footer {
     height: 100vh;
     padding: 3em;
     box-sizing: border-box;
+    left: -340px;
+    transition: .5s;
 }
 
 .sidebar p {
@@ -176,7 +180,7 @@ footer {
 .sidebar .nav-link{
     margin-left: 0;
     padding: 1em 3em;
-} */
+}
 
 
 .sidebar-helper {
@@ -185,5 +189,6 @@ footer {
     background-color: #ffffff56;
     width: calc(100% - 340px);
     height: 100vh;
-    right: 0;
+    transition: .5s;
+    right: 100%;
 }
