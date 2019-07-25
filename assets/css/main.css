@@ -4,6 +4,10 @@
     font-family: 'Slabo 27px', serif;
 }
 
+body {
+    max-width: 100%;
+}
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -103,6 +107,7 @@ h2 {
     background-color: #F6F4D2;
     padding: 2em;
     display: flex;
+    box-sizing: border-box;
 }
 
 .apresentacao-pessoas {
