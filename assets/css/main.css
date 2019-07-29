@@ -109,6 +109,8 @@ h2 {
     padding: 2em;
     display: flex;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .apresentacao-pessoas {
@@ -117,6 +119,7 @@ h2 {
     justify-content: center;
     margin: 1em;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .apresentacao-pessoas img {
@@ -159,7 +162,7 @@ footer {
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     z-index: 5;
     background-color: #000000b2;
     width: 340px;
@@ -190,7 +193,7 @@ footer {
 
 
 .sidebar-helper {
-    position: absolute;
+    position: fixed;
     z-index: 5;
     background-color: #ffffff56;
     width: calc(100% - 340px);
