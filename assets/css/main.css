@@ -14,6 +14,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .apresentacao {
@@ -104,12 +105,13 @@ h2 {
 }
 
 .pessoal {
-    text-align: center;
     background-color: #F6F4D2;
     padding: 2em;
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
     max-width: 100%;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -117,7 +119,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 1em;
+    margin: 1em 0;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
@@ -168,9 +170,22 @@ footer {
     width: 340px;
     height: 100vh;
     padding: 3em;
-    box-sizing: border-box;
     left: -340px;
+    top: 0;
     transition: .5s;
+    max-width: 340px;
+    box-sizing: border-box;
+}
+
+.sidebar-helper {
+    position: fixed;
+    z-index: 6;
+    background-color: #ffffff56;
+    width: calc(100% - 340px);
+    height: 100vh;
+    transition: .57s;
+    right: 100%;
+    top: 0;
 }
 
 .sidebar p {
@@ -192,12 +207,3 @@ footer {
 }
 
 
-.sidebar-helper {
-    position: fixed;
-    z-index: 5;
-    background-color: #ffffff56;
-    width: calc(100% - 340px);
-    height: 100vh;
-    transition: .5s;
-    right: 100%;
-}
