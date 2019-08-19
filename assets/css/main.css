@@ -83,12 +83,17 @@ h2 {
 }
 
 .veja-mais{
+    background-color: #0000005d;
+    font-size: .8em;
+}
+
+.veja-mais a {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #0000005d;
-    font-size: .8em;
+    text-decoration: none;
+    color: #fff;
 }
 
 .historia{
