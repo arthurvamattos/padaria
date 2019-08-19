@@ -96,6 +96,21 @@ h2 {
     color: #fff;
 }
 
+#arrow-down {
+    position: relative;
+    animation: arrowAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes arrowAnimation {
+    0%, 100% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+
+}
+
 .historia{
     display: flex;
     padding: 2em 0;
